@@ -600,7 +600,7 @@
   border: none;
   width: 20px;
 }
-.review .review__select:hover {
+.review .review__select button:hover {
   color: white;
   cursor: pointer;
 }
