@@ -1,12 +1,11 @@
+
 import { Products } from "../interfaces/Products.js"
 import { Inventory } from "../Inventory.js"
+import { Storage } from "../Storage.js"
 
 
-export class BusinessLogic extends Storage {
+export class BusinessLogic extends Storage<Array<Products>>{
 
-    constructor(){
-        super()
-    }
 
     new_list: Array<Products> = JSON.parse(JSON.stringify(Inventory.inventory))
     product_name: HTMLElement = document.querySelector("#name")!
@@ -42,8 +41,7 @@ export class BusinessLogic extends Storage {
         if (this.order_amount > 0) {
             this.order_amount = this.order_amount - (+1)
         }
-
-           
+    
       const input = <HTMLInputElement>document.querySelector("#amount")!
       input.value = (this.order_amount).toString()
       console.log(input.value)

@@ -15,6 +15,12 @@
     @extend %expand; 
 }
 
+.header__logo--index{
+    text-decoration:none;
+    color:inherit    
+}
+
+
 .header__button{
     background: url(../../../images/shopping-bag.png) ;
     background-position: center;

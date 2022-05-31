@@ -269,9 +269,10 @@ li>button {
     justify-content: flex-start;
     margin-top: 2em;
     font-size: 24px;
-
 }
-
+.pt-1{
+    padding-top: 1em;
+}
 .img-prod {
     /* border: 1px solid #C4C4C4; */
     width: 18em;
@@ -283,6 +284,7 @@ li>button {
         transition: 0.5s all;
         border-left: 1px solid rgba(#00000023, 0.9);
         border-right: 1px solid rgba(#00000023, 0.9);
+        cursor: pointer;
     }
 }
 
