@@ -72,24 +72,24 @@ li>a {
 #logo-slogan {
     align-self: flex-end;
     padding: 5px;
-}
+} 
 
 
 
 
-.titulo {
+ .titulo {
     font-size: 3em;
 }
 
 .sub {
     justify-content: flex-end;
-}
+} 
 
-.icon {
+ .icon {
     display: flex;
 
     width: 15%;
-}
+} 
 
 .vis {
     outline: 1px solid red;
@@ -194,7 +194,7 @@ li>input {
 
 
 
-ul>div.flex {
+ul>div.flex { /**/
     align-items: center;
 }
 
@@ -454,7 +454,7 @@ input::placeholder {
     grid-template-columns: 3fr 1.2fr 1fr;
     column-gap: 30px;
 
-}
+} 
 
 div.big-article>article > img{
     height: 320px !important;

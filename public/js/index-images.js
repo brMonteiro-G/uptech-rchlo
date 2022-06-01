@@ -12,10 +12,13 @@ for (let index = 0; index < 8; index++) {
     const produto = storage.find((_ , indiceInventario) => indiceInventario === index)
 
     let tagsP = divAtual.querySelectorAll('.prices')
-    tagsP.forEach((tag,index) => index===1?tag.innerHTML = "R$ " + produto.preco:tag.innerHTML = produto.nome)
+    tagsP.forEach((tag,index) => index===1?tag.innerHTML = "R$ " + produto.preco.toFixed(2):tag.innerHTML = produto.nome)
 
     let image = divAtual.querySelector('.img-prod')
     image.setAttribute('src', produto.imagens[0].url)
+
+    let link = divAtual.querySelector('a')
+    link.setAttribute('href', "../html/details.html")
 }
 
 
@@ -30,12 +33,13 @@ function criaCard(secao){
         divImages.classList.add('div-image-buttons')
         const image = document.createElement('img')
         image.classList.add('img-prod')
-        divImages.appendChild(image)
+        const link = document.createElement("a")
+        divImages.appendChild(link)
+        link.appendChild(image)
         divProdutos.appendChild(divImages)
     
         const nomeProduto = document.createElement("p")
-        nomeProduto.classList.add('txt-desc-prod', 'prices')
-        nomeProduto.innerHTML = "oi"
+        nomeProduto.classList.add( 'prices')
         divProdutos.appendChild(nomeProduto)
     
     

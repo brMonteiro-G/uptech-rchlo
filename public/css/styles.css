@@ -340,7 +340,6 @@
 
 .footer__input {
   display: flex;
-  justify-content: center;
 }
 .footer__input input {
   width: 280px;
@@ -431,10 +430,6 @@
   padding: 2%;
 }
 
-.header__logo {
-  text-decoration: none;
-}
-
 .header__button {
   background: url(../../../images/shopping-bag.png);
   background-position: center;
@@ -444,6 +439,13 @@
   width: 32px;
   height: 32px;
   display: block;
+}
+.header__button:hover {
+  border: solid 1px #ffffff;
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  transition: 1s all;
+  transform: scale(1.2);
 }
 
 @media (max-width: 760px) {
@@ -479,6 +481,7 @@
   justify-content: space-between;
   align-items: center;
   border: none;
+  width: 96%;
 }
 @media screen and (max-width: 554px) {
   .searchBar {
@@ -669,6 +672,343 @@
   background-color: rgba(186, 189, 66, 0.5);
   transform: scale(1.1);
   transition: all 0.5s;
+}
+
+body {
+  font-family: "Roboto", sans serif;
+  text-decoration: none;
+}
+
+body, html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+li > button {
+  width: 160px;
+  height: 38px;
+  background-color: #666666;
+  border: none;
+}
+
+.navbar {
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+  font-size: 18px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.navbar--link:hover {
+  border: solid 1px #E5E5E5;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: 1s border;
+  transform: scale(0.9);
+}
+
+.header--button:hover {
+  border: solid 1px #ffffff;
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  transition: 1s all;
+  transform: scale(1.2);
+}
+
+.main__subtitle--first, .main__subtitle--second {
+  margin-bottom: 2em;
+  font-size: 2em;
+  font-weight: 600;
+}
+.main__subtitle--third, .main__subtitle--fourth {
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 3em;
+}
+.main__subtitle--fourth {
+  margin-top: 0;
+}
+
+.footer {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer--items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1.5fr;
+  grid-template-rows: 280px;
+  padding: 1%;
+  justify-content: space-around;
+}
+.footer--items ul:nth-child(2n) > li {
+  margin-bottom: 0;
+}
+.footer--items ul > li:nth-child(1) {
+  font-weight: 700;
+}
+.footer--items li {
+  margin: 20px;
+}
+.footer--items .contacts--logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer--button button {
+  background-color: #BABD42;
+  color: white;
+  border-radius: 5%;
+}
+.footer--button button:hover {
+  color: black;
+}
+.footer--button input {
+  width: 280px;
+  height: 32px;
+}
+
+.logo {
+  width: 265px;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.logo p,
+.logo h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.logo span {
+  font-size: 12px;
+  font-weight: 400;
+  align-self: flex-end;
+}
+.logo p {
+  font-size: 36px;
+  font-weight: bold;
+}
+.logo h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.slogan {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background: linear-gradient(to bottom, #82954B, #BABD42);
+  height: 19em;
+  width: 100%;
+  border-radius: 1%;
+  margin-top: 4em;
+}
+
+.slogan--text {
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+  width: 65%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.slogan--text .normal {
+  padding-top: 5%;
+  letter-spacing: 0.2em;
+}
+.slogan--text .justify {
+  letter-spacing: 1em;
+}
+
+.logo--right {
+  justify-self: right;
+  align-self: flex-end;
+}
+
+.searchBar {
+  width: 98%;
+  margin: 0;
+  height: 50px;
+  padding: 0.5%;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBar--input::placeholder {
+  font-size: 1em;
+}
+.searchBar .image {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: center;
+  width: 100px;
+  height: 55px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 3fr 1.2fr 1fr;
+  column-gap: 30px;
+  margin-bottom: 3em;
+  /*passar para html imagens article*/
+}
+.article p {
+  margin: 20px 0px 20px 0px;
+  width: 96%;
+}
+.article--left {
+  height: 320px;
+}
+.article--left img {
+  width: 95% !important;
+  height: 519px;
+}
+.article--right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.article--right p::nth-child(1) {
+  margin-top: 0;
+  margin-bottom: 130px;
+}
+
+.article--middle__top img {
+  background-position: 50% 45% !important;
+  background-size: contain !important;
+  height: 180px;
+  margin-bottom: 20px;
+  border-radius: 1%;
+  height: 347px;
+  width: 434px;
+}
+
+.article--middle__bottom img {
+  background-position: 50% 45% !important;
+  background-size: contain !important;
+  height: 180px;
+  border-radius: 1%;
+  height: 347px;
+  width: 434px;
+}
+
+/*refatorar*/
+.prices {
+  display: grid;
+  width: 110%;
+  grid-template-columns: 1fr;
+  justify-content: flex-start;
+  margin-top: 2em;
+  font-size: 24px;
+}
+
+.img-prod {
+  /* border: 1px solid #C4C4C4; */
+  width: 18em;
+  height: 23em;
+  box-sizing: border-box;
+}
+.img-prod:hover {
+  transform: scale(0.97);
+  transition: 0.5s all;
+  border-left: 1px solid rgba(0, 0, 0, 0.9);
+  border-right: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+.grid-prod {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 26em;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxModel {
+  box-sizing: border-box;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 22em 1em 1em 3em;
+  align-items: center;
+  row-gap: 1%;
+  width: 26em;
+  height: 30em;
+  padding: 4em;
+  padding-top: 0;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
+.boxModel:hover {
+  transition: 0.2s all;
+  transform: scale(1.1);
+}
+
+.div-image-buttons {
+  box-sizing: border-box;
+  width: 285px;
+}
+
+div.div-image-buttons > img {
+  box-sizing: border-box;
+  border: 1px solid #C4C4C4;
+  border-radius: 1%;
+  padding: 4%;
+  transition: 1s all;
+}
+
+div.div-image-buttons > img:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.txt-desc-prod {
+  font-weight: 400;
+  color: #666666;
+  font-size: 26px !important;
+  margin-top: 2.5em;
+  /*  refactor*/
+}
+
+.flex {
+  display: flex;
+}
+
+.background-bag {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 42px;
+  justify-content: center;
+  width: 285px;
+  border-radius: 1%;
+  margin-top: 4em;
+}
+.background-bag button {
+  background-color: #BABD42;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+.background-bag button:hover {
+  color: black;
+  cursor: pointer;
+}
+.background-bag img {
+  justify-self: center;
+  align-self: center;
+  padding: 0 2% 2% 0;
+}
+.background-bag p {
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.shopping-cart {
+  background: url(../images/shopping-bag\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 body {
