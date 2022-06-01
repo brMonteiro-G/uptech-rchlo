@@ -457,19 +457,21 @@ input::placeholder {
 }
 
 div.big-article>article > img{
-    height: 320px;
-    width: 100%;
-    background: url(images/collection-clothes-girls.jpg);
+    height: 320px !important;
+    width: 100% !important;
+    background: url(../images/collection-clothes-girls.jpg) !important;
 }
 
 article.first-middle-article {
-    background: url(images/collection-clothes-classic.jpg);
-    background-position: 50% 45%;
-    background-size: contain;
+    background: url(../images/collection-clothes-classic.jpg) !important;
+    background-position: 50% 45% !important;
+    background-size: contain !important;
 }
 
 article.second-middle-article{
-    background: url(images/collection-clothes-street.jpg);background-position: 50% 45%; background-size: contain;
+    background: url(../images/collection-clothes-street.jpg)!important;
+    background-position: 50% 45% !important;
+     background-size: contain !important;
 }
 
 

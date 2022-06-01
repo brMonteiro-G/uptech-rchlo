@@ -14,8 +14,11 @@
     <header>
         <div class="header">
             <div class="header__logo">
-                <h1>Reviva Fashion</h1>
-                <small>by RCHLO</small>
+                <a href="../html/index.html" style='text-decoration:none;color:inherit' >
+                    <h1>Reviva Fashion</h1>
+                    <small>by RCHLO</small>
+                </a>
+               
             </div>
             <div>
                 <a class="header__button" href="">Botão para carrinho de compras</a>
@@ -52,7 +55,7 @@
             </div>
             <div class="review__description--top">
                 <strong>Produto</strong>
-                <p>Blusa feminina Kaienne</p>
+                <p id="name">Blusa feminina Kaienne</p>
             </div>
             <div class="review__size--top">
                 <strong>Tamanho escolhido</strong>
@@ -83,9 +86,9 @@
             <div class="review__amount--top">
                 <strong>Quantidade</strong>
                 <div class="review__select">
-                    <button>+</button>
-                    <input type="text" value="1" reandonly>
-                    <button>-</button>
+                    <button id="plus">+</button>
+                    <input id="amount" type="text" value="0" readonly  >
+                    <button id="minus">-</button>
                 </div>
             </div>
             <div class="review__subtotal--top">
@@ -105,18 +108,18 @@
                 <fieldset class="details__button--size">
 
                     <div class="details__button--size--p">
-                        <input type="radio" name="size" value="0" id="radio-1">
-                        <label for="radio-1">Tamanho P</label>
+                        <input type="radio" name="size1" value="0" id="radio1">
+                        <label for="radio1">Tamanho P</label>
                     </div>
 
                     <div class="details__button--size--m">
-                        <input type="radio" name="size" value="1" id="radio-2">
-                        <label for="radio-2">Tamanho M</label>
+                        <input type="radio" name="size1" value="1" id="radio2">
+                        <label for="radio2">Tamanho M</label>
                     </div>
 
                     <div class="details__button--size--g">
-                        <input type="radio" name="size" value="2" id="radio-3">
-                        <label for="radio-3">Tamanho G</label>
+                        <input type="radio" name="size1" value="2" id="radio3">
+                        <label for="radio3">Tamanho G</label>
                     </div>
 
                 </fieldset>
@@ -130,9 +133,9 @@
             <div class="review__amount--bottom">
                 <strong>Quantidade</strong>
                 <div class="review__select">
-                    <button>+</button>
-                    <input type="text"  value="1" reandonly>
-                    <button>-</button>
+                    <button id="plus">+</button>
+                    <input id="amount" type="text" value="0" readonly  >
+                    <button id="minus">-</button>
                 </div>
                 
             </div>
@@ -210,6 +213,11 @@
         </div>
 
     </footer>
+
+    <script src="../js/inventory.js"></script>
+    <script src="../js/cart-buttons.js"></script>
+
+
 
 </body>
 
